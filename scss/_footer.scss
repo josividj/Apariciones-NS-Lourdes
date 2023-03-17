@@ -1,0 +1,5 @@
+footer{
+    .redes{
+        @include flex(row, center, center);
+    }
+}

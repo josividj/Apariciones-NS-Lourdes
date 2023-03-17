@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icons8-paw-prints-16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <meta name="keywords" content="Apariciones marianas, Lourdes, Mapa, Formulario de contacto, Suscripción, Boletín de noticias">
+    <meta name="description" content="Cómo llegar a Lourdes. El mapa. Formulario para suscripción al Boletín y para dejar opiniones.">
+    <title>Contacto. Mapa y formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo-200x125px.png" alt="Logo original de Lourdes">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/lugares.html">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/oraciones.html">Oraciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid">
+        <section class="hoja_contacto">
+            <h2 class="centrado">Cómo llegar</h2>
+            <img src="../img/icons8-hand-right-50.png" alt="imagen de una mano derecha">
+            <div class="map-frame">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.3374439626386!2d-0.06048078546186046!3d43.097422896209956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd57d69e4e7e1967%3A0xa40981de7e97a5c5!2sSanctuaires%20Notre-Dame%20de%20Lourdes!5e0!3m2!1sen!2sar!4v1674731369176!5m2!1sen!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </section>
+    <section class="container-fluid">
+        <div class="contacto">
+            <h2 class="centrado">Contacto</h2>
+            <div class="container container-md">
+                <form class="border p-4 rounded">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="civil_status" class="form-label">Estado civil</label>
+                        <select class="form-select" id="civil_status" name="civil_status" required>
+                            <option value="">Seleccionar estado civil</option>
+                            <option value="soltero">Soltero/a</option>
+                            <option value="casado">Casado/a</option>
+                            <option value="divorciado">Divorciado/a</option>
+                            <option value="viudo">Viudo/a</option>
+                        </select>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                        <label class="form-check-label" for="newsletter">Deseo recibir newsletter</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="comment" name="comment" rows="5" placeholder="Nos gustaría conocer sus opiniones y/o sugerencias"></textarea>
+                    </div>
+                    <div class="gap-2 d-md-block">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="reset" class="btn btn-secondary">Resetear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/sanctuairedelourdes" target="_blank"><img class="icon"
+                    src="../img/icons8-facebook.svg" alt="facebook"></a>
+
+            <a href="https://www.instagram.com/sanctuairedelourdes/" target="_blank"><img class="icon"
+                    src="../img/icons8-instagram.svg" alt="instagram"></a>
+
+            <a href="https://twitter.com/lourdes_france
+            " target="_blank"><img class="icon" src="../img/icons8-twitter.svg" alt="twitter"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

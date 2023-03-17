@@ -1,0 +1,1461 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+}
+
+ul {
+	li {
+		list-style-type: none;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ------------------------------------------ */
+/* index html  */
+/* ------------------------------------------ */
+
+.navbar {
+	background-color: $background-color_2;
+	font-family: $font-family_2;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.titulo {
+	h1 {
+		font-size: 60px;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 40px;
+		font-weight: bold;
+	}
+}
+
+.principal {
+	max-width: 80%;
+	max-height: 60%;
+	margin: 20px auto;
+	padding: 10px;
+	border: 1px solid $border-color_1;
+	border-radius: 5px;
+
+	img {
+		width: 100%;
+		border-radius: 5px;
+	}
+
+	article {
+		p {
+			line-height: 1.7rem;
+		}
+	}
+}
+
+.remarcado {
+	font-weight: bold;
+	font-style: italic;
+}
+
+footer {
+	background-color: $background-color_2;
+	margin: 0px;
+	padding: 10px;
+}
+
+/* ------------- */
+/* historia html */
+/* ------------- */
+.titulo {
+	font-size: 55px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.centrado {
+	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.primeraParte {
+	margin-bottom: 30px;
+
+	.bernardita {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			width: 100%;
+			border: 2px solid $border-color_1;
+			margin-right: 11px;
+		}
+
+		h3 {
+			font-size: 15px;
+			margin-top: 0.7rem;
+			font-weight: bold;
+		}
+	}
+
+	.card {
+		border: 2px solid $border-color_1;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		display: inline-flex;
+		margin-top: auto;
+		font-size: 100%;
+	}
+
+	.card-text {
+		width: 100%;
+		background-color: $background-color_1;
+		box-sizing: border-box;
+	}
+
+	.texto {
+		line-height: 2.3em;
+		position: relative;
+		z-index: 2;
+		transition: all 3s;
+
+		&:hover {
+			transform: rotate(360deg) scale(1.08) translate(0px);
+			background-color: $background-color_3;
+		}
+	}
+
+	.tres-fotos {
+		display: flex;
+		align-items: center;
+		margin: auto;
+
+		h4 {
+			text-align: center;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		h5 {
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.a2 {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			z-index: 3;
+			transition: all 3s;
+
+			&:hover {
+				transform: scale(1.6) translate(200px);
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			.segunda {
+				display: flex;
+				height: 100%;
+				width: 100%;
+				align-items: center;
+				background-color: $background-color_4;
+				border: 2px solid $border-color_1;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				transition: all 3s;
+
+				.caption-content {
+					color: $color_1;
+					font-size: 12px;
+					margin: 1rem 2rem 1rem;
+
+					&:hover {
+						color: $color_2;
+						font-weight: 600;
+						text-align: center;
+						margin-top: 1.5rem;
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		.a3 {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			z-index: 1;
+			transition: all 3s;
+
+			&:hover {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			.tercera {
+				display: flex;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				background-color: $background-color_5;
+				top: 0;
+				bottom: 0;
+				transition: all 3s;
+				border: 2px solid $border-color_1;
+
+				.caption-content {
+					color: $color_3;
+					font-size: 14px;
+					margin: 2rem 2rem 1rem;
+					text-align: center;
+
+					&:hover {
+						font-size: 16px;
+						color: $color_2;
+						font-weight: 800;
+						margin-top: 1rem;
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		.a5 {
+			display: block;
+			position: relative;
+			overflow: hidden;
+			z-index: 2;
+			transition: all 3s;
+
+			&:hover {
+				transform: scale(1.5) translate(-90px);
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			.quinta {
+				display: flex;
+				height: 100%;
+				width: 100%;
+				align-items: center;
+				position: absolute;
+				background-color: $background-color_5;
+				border: 2px solid $border-color_1;
+				top: 0;
+				bottom: 0;
+				transition: all 3s;
+
+				.caption-content {
+					h4 {
+						margin-top: 1em;
+						font-size: 16px;
+					}
+
+					p {
+						font-family: $font-family_2;
+						font-size: medium;
+						padding: 0rem;
+					}
+
+					color: $color_3;
+					font-size: 14px;
+					margin: 1rem 2rem 1rem;
+
+					&:hover {
+						color: $color_2;
+						font-size: 16px;
+						font-weight: 700;
+						text-align: center;
+						margin-top: 1rem;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.container-fluid {
+	h3 {
+		margin-top: 3.7rem;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		font-style: italic;
+		padding: 0.1em;
+	}
+}
+
+.segundaParte {
+	display: flex;
+	align-items: baseline;
+	margin-left: 0px;
+	padding-left: 0px;
+
+	.col-md-4 {
+		display: grid;
+	}
+
+	figure {
+		margin: 0rem auto;
+	}
+
+	img {
+		border: 2px solid $border-color_1;
+	}
+}
+
+/* ------------ */
+/* lugares html */
+/* ------------ */
+.padreLugares {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "inmaculada rosario sanpio";
+	gap: 13px;
+}
+
+.lug1 {
+	grid-area: inmaculada;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+
+	img {
+		width: 240px;
+		height: 190px;
+		border: 2px solid $border-color_1;
+		margin: 10px;
+	}
+
+	div {
+		width: 300px;
+		margin: 10px;
+	}
+}
+
+figcaption {
+	h4 {
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+.lug2 {
+	img {
+		width: 240px;
+		height: 190px;
+		border: 2px solid $border-color_1;
+		margin: 10px;
+	}
+
+	div {
+		width: 300px;
+		margin: 10px;
+	}
+
+	figcaption {
+		h4 {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	grid-area: rosario;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.lug3 {
+	img {
+		width: 240px;
+		height: 190px;
+		border: 2px solid $border-color_1;
+		margin: 10px;
+	}
+
+	div {
+		width: 300px;
+		margin: 10px;
+	}
+
+	figcaption {
+		h4 {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	
+	grid-area: sanpio;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/* -------------- */
+/* oraciones html */
+/* -------------- */
+.comoRezar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.padreOraciones {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 15px;
+
+	img {
+		width: 300px;
+		margin: 40px;
+		margin-right: 25px;
+		margin-top: 0;
+		margin-bottom: 5px;
+		padding: 10px;
+		border: 3px solid $border-color_2;
+		border-radius: 5px;
+	}
+
+	.second-image {
+		height: auto;
+		margin-left: 10px;
+	}
+
+	p {
+		font-size: 1rem;
+		width: 400px;
+	}
+}
+
+.rezar {
+	padding: 10px;
+	margin: 20px;
+	border: 5px solid $border-color_2;
+	border-radius: 5px;
+}
+
+/* ---------------- */
+/* actividades html */
+/* ---------------- */
+.bloque1 {
+	h2{
+		font-size: 55px;
+		padding-bottom: 0;
+	}
+	h3{
+		font-size: 45px;
+		margin-top: 0;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+table {
+	overflow: hidden;
+	box-sizing: border-box;
+	width: 66%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.align-middle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.separar {
+	padding: 10px;
+}
+
+.video {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 10px gray;
+	border: 5px solid brown;
+
+	iframe {
+		margin: -7px;
+	}
+}
+
+/* ------------- */
+/* contacto html */
+/* ------------- */
+.hoja_contacto {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.contacto{
+	h2{
+		font-size: 35px;
+		font-weight: bold;
+	}
+}
+
+.map-frame {
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+
+	margin-top: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px gray;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 5px;
+	width: 66%;
+	height: 450px;
+	border: 3px solid $border-color_3;
+}
+
+.contacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.btn {
+		border-radius: 4px;
+	}
+}
+
+.icon {
+	width: 48px;
+	height: 48px;
+}
+
+.redes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/* breakpoint valor máximo para desktop */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	/* index.html */
+	/*tamaño icono de Lourdes en el menú*/
+	nav {
+		.container-fluid {
+			img {
+				width: 98px;
+				height: auto;
+			}
+		}
+	}
+
+	/*tamaño letra menú*/
+	.navbar-nav {
+		a {
+			font-size: 1.4rem;
+		}
+	}
+
+	.titulo {
+		h1 {
+			font-size: 55px;
+		}
+	}
+
+	/* para página historia  */
+
+	.primeraParte {
+		.card {
+			font-size: 77%;
+		}
+
+		.texto {
+			line-height: 2em;
+		}
+
+		.tres-fotos {
+			h4 {
+				font-size: 14px;
+			}
+
+			h5 {
+				font-size: medium;
+			}
+
+			.a2 {
+				&:hover {
+					transform: scale(0.1) translate(150px);
+				}
+
+				.segunda {
+					.caption-content {
+						margin-top: 1.2rem;
+						font-size: 14px;
+						line-height: 1.2rem;
+					}
+				}
+			}
+
+			.a3 {
+				.tercera {
+					.caption-content {
+						font-size: 12px;
+						margin-top: 1.0rem;
+
+						&:hover {
+							font-weight: 700;
+							line-height: 1.5rem;
+							margin-top: 0.5rem;
+							margin-left: 1rem;
+						}
+					}
+				}
+			}
+
+			.a5 {
+				.quinta {
+					.caption-content {
+						h4 {
+							margin-top: 10px;
+						}
+
+						margin: 0;
+
+						p {
+							line-height: 1.3rem;
+							font-size: small;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.container-fluid {
+		h3 {
+			margin-bottom: 20px;
+		}
+	}
+
+	.segundaParte {
+		img {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.italic {
+			font-size: 0.8rem;
+			text-align: left;
+		}
+	}
+
+	/* para página lugares */
+	.padreLugares {
+		grid-template-columns: repeat(3, 0.5fr);
+		gap: 10px;
+
+		.ficha-tecnica {
+			p {
+				line-height: 1.5rem;
+			}
+		}
+	}
+
+	.lug1 {
+		margin-left: auto;
+
+		img {
+			width: 210px;
+			height: 180px;
+			margin: 5px;
+		}
+
+		div {
+			width: 230px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+
+		figcaption {
+			font-size: medium;
+		}
+	}
+
+	.lug2 {
+		img {
+			width: 210px;
+			height: 180px;
+			margin: 5px;
+		}
+
+		div {
+			width: 230px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+
+		figcaption {
+			font-size: medium;
+		}
+	}
+
+	.lug3 {
+		img {
+			width: 210px;
+			height: 180px;
+			margin: 5px;
+		}
+
+		div {
+			width: 230px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+
+		figcaption {
+			font-size: medium;
+		}
+	}
+
+	/* para página oraciones */
+	.padreOraciones {
+		justify-content: space-evenly;
+
+		img {
+			width: 250px;
+			border: 3px solid $border-color_2
+		}
+
+		.second-image {
+			display: none;
+		}
+
+		p {
+			margin-left: 20px;
+			font-size: 1rem;
+			width: 400px;
+		}
+	}
+
+	/* para página actividades */
+	.bloque1 {
+		h2 {
+			font-size: 40px;
+			padding-bottom: 0;
+		}
+
+		h3 {
+			font-size: 35px;
+			margin-top: 0;
+		}
+	}
+
+	/* para página contacto */
+	.hoja_contacto {
+		iframe {
+			margin-bottom: 20px;
+		}
+	}
+
+	.comentario {
+		h4 {
+			text-align: left;
+		}
+	}
+}
+
+/* breakpoint valor máximo para tablet */
+@media (min-width:576px) and (max-width: 767.98px) {
+
+	/* para página inicio */
+	/*tamaño icono de Lourdes en el menú*/
+	nav {
+		.container-fluid {
+			img {
+				width: 90px;
+			}
+		}
+	}
+
+	/*tamaño letra menú*/
+	.navbar-nav {
+		a {
+			font-size: 1.2rem;
+		}
+	}
+
+	.titulo {
+		h1 {
+			font-size: 42px;
+		}
+
+		h2 {
+			font-size: 33px;
+		}
+	}
+
+	/* para página historia */
+	.primeraParte {
+		.marginLeft {
+			margin-left: 3px;
+		}
+
+		.bernardita {
+			img {
+				width: 80%;
+			}
+		}
+
+		.texto {
+			width: 100%;
+			line-height: 1.5rem;
+			font-size: small;
+			padding: 1.5rem 0.5rem 2rem 0.5rem;
+		}
+
+		.tres-fotos {
+			.a2 {
+				margin: 10px 70px;
+
+				&:hover {
+					transform: scale(1.5) translate(0px);
+				}
+			}
+
+			.a3 {
+				margin: 10px 70px;
+
+				.tercera {
+					.italic {
+						font-size: 18px;
+						font-style: italic;
+					}
+
+					.caption-content {
+						h4 {
+							font-size: 18px;
+						}
+
+						h5 {
+							font-size: 18px;
+						}
+
+						p {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+
+			.a5 {
+				margin: 10px 70px;
+
+				&:hover {
+					transform: scale(1.5) translate(0px);
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				.quinta {
+					.caption-content {
+
+						h4 {
+							font-size: 18px;
+						}
+
+						p {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.segundaParte {
+		figure {
+			margin: 1rem;
+			margin-left: auto;
+		}
+
+		img {
+			margin: 10px 100px;
+		}
+	}
+
+	/* para página lugares */
+	main {
+		.titulo {
+			font-size: 35px;
+		}
+	}
+
+	.padreLugares {
+		grid-template-columns: repeat(2, 0.5fr);
+		grid-template-areas: "inmaculada rosario";
+		gap: 5px;
+	}
+
+	.lug1 {
+		margin-left: 10px;
+
+		img {
+			width: 250px;
+			height: 200px;
+			margin: 5px;
+			margin-left: 10px;
+		}
+
+		div {
+			width: 263px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+
+		figcaption {
+			h4 {
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+	}
+
+	.lug2 {
+		img {
+			width: 250px;
+			height: 200px;
+			margin: 5px;
+		}
+
+		div {
+			width: 263px;
+			margin: 7px;
+			font-size: 1rem;
+		}
+
+		figcaption {
+			h4 {
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+	}
+
+	.lug3 {
+		display: none;
+	}
+
+	/* para página oraciones */
+	.comoRezar {
+		h1 {
+			font-size: 37px;
+		}
+
+		h2 {
+			font-size: 27px;
+		}
+	}
+
+	.rezar {
+		font-size: 0.8rem;
+		width: 70vw;
+	}
+
+	.padreOraciones {
+		flex-direction: row-reverse;
+
+		img {
+			width: 200px;
+			border: 3px solid $border-color_2;
+			border-radius: 3px;
+		}
+
+		.second-image {
+			display: none;
+		}
+
+		p {
+			margin-left: 30px;
+			font-size: 12px;
+			width: 300px;
+		}
+	}
+
+	/* para página actividades */
+	.bloque1 {
+		h2 {
+			font-size: 40px;
+			padding-bottom: 0;
+		}
+
+		h3 {
+			font-size: 35px;
+			margin-top: 0;
+		}
+	}
+
+	.video {
+		iframe {
+			width: 500px;
+			height: 417px;
+		}
+	}
+
+	/* para página contacto */
+	.hoja_contacto {
+		margin-top: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 20px;
+
+		h2 {
+			font-size: 20px;
+		}
+
+		img {
+			width: 40px;
+		}
+	}
+
+	.map-frame {
+		margin: 0px;
+		padding: 0px;
+		width: 60%;
+		height: 359px;
+		border: 3px solid $border-color_3;
+
+		iframe {
+			margin: 0px;
+			width: 463px;
+			height: 350px;
+		}
+	}
+}
+
+/* breakpoint valor máximo para celulares */
+@media screen and (max-width: 575.98px) {
+
+	/* index.html */
+	/*tamaño icono de Lourdes en el menú*/
+	nav {
+		.container-fluid {
+			img {
+				width: 85px;
+				height: auto;
+			}
+		}
+	}
+
+	/*tamaño letra menú*/
+	.navbar-nav {
+		a {
+			font-size: 0.8rem;
+		}
+	}
+
+	li {
+		img {
+			width: 50px;
+		}
+	}
+
+	/* para página inicio */
+	.titulo {
+		h1 {
+			font-size: 40px;
+		}
+
+		h2 {
+			font-size: 25px;
+		}
+	}
+
+	article {
+		p {
+			font-weight: initial;
+		}
+	}
+
+	/* para página historia */
+	.titulo {
+		font-size: 40px;
+	}
+
+	.primeraParte {
+		.bernardita {
+			img {
+				width: 50%;
+				margin-left: 40px;
+			}
+
+			h3 {
+				margin-left: 40px;
+			}
+		}
+
+		.card {
+			margin-left: 20px;
+			margin-left: 30px;
+		}
+
+		.texto {
+			font-size: 1em;
+			font-weight: initial;
+			line-height: 1.7rem;
+			padding: 1.5rem 0.5rem 2rem 0.7rem;
+			transition: none;
+			background-color: $background-color_1;
+
+			&:hover {
+				transform: none;
+				background-color: $background-color_1;
+			}
+		}
+
+		.tres-fotos {
+
+			.a2 {
+				margin: 10px 50px;
+				transition: none;
+
+				&:hover {
+					transform: none;
+				}
+
+				img {
+					width: 100%;
+				}
+
+				.segunda {
+					position: relative;
+					transition: none;
+
+					.caption-content {
+						font-weight: bold;
+						font-size: 13px;
+						text-align: center;
+
+						&:hover {
+							color: $color_1;
+						}
+					}
+
+					background-color: $background-color_1;
+				}
+			}
+
+			.a3 {
+				margin: 10px 50px;
+				transition: none;
+
+				img {
+					width: 100%;
+				}
+
+				.tercera {
+					position: relative;
+
+					.italic {
+						font-size: 18px;
+						font-style: italic;
+					}
+
+					.caption-content {
+						color: $color_1;
+						font-weight: bold;
+						text-align: center;
+
+						p {
+							font-size: 16px;
+						}
+
+						&:hover {
+							color: $color_1;
+						}
+					}
+
+					background-color: $background-color_1;
+				}
+			}
+
+			.a5 {
+				margin: 10px 50px;
+				transition: none;
+
+				img {
+					width: 100%;
+				}
+
+				&:hover {
+					transform: none;
+				}
+
+				.quinta {
+					position: relative;
+
+					.caption-content {
+						color: $color_1;
+						font-weight: bold;
+
+
+						p {
+							line-height: 1.3rem;
+							text-align: center;
+						}
+
+						&:hover {
+							color: $color_1;
+						}
+
+						h4 {
+							font-weight: 700;
+							margin-bottom: 15px;
+						}
+					}
+
+					background-color: $background-color_1;
+				}
+			}
+
+			.quinta {
+				position: relative;
+				transition: none;
+
+				.caption-content {
+
+					h5 {
+						font-size: 18px;
+					}
+
+					p {
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+
+	.container-fluid {
+		h3 {
+			font-size: 25px;
+			margin-top: 0rem;
+			margin-left: 20px;
+			padding-top: 0rem;
+		}
+	}
+
+	.segundaParte {
+		margin-left: 0px;
+
+		figure {
+			margin: auto;
+		}
+
+		img {
+			width: 100%;
+			margin-left: 5px;
+		}
+
+		.italic {
+			text-align: center;
+		}
+
+		figcaption {
+			margin: auto;
+			margin-bottom: 10px;
+			margin-left: 20px;
+			text-align: center;
+		}
+	}
+
+	/* para página lugares */
+
+	.padreLugares {
+		grid-template-columns: repeat(2, 0.5fr);
+		grid-template-areas: "none inmaculada""none rosario";
+		gap: 5px;
+	}
+
+	.lug1 {
+		margin-left: auto;
+
+		img {
+			width: 200px;
+			height: 150px;
+			margin: 5px;
+		}
+
+		figcaption {
+			h4 {
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+
+		div {
+			width: 270px;
+			margin: 10px;
+			font-size: 0.8rem;
+		}
+	}
+
+	.lug2 {
+		margin-left: auto;
+
+		img {
+			width: 200px;
+			height: 150px;
+			margin: 5px;
+		}
+
+		figcaption {
+			h4 {
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+
+		div {
+			width: 270px;
+			margin: 10px;
+			font-size: 0.8rem;
+		}
+	}
+
+	.lug3 {
+		display: none;
+	}
+
+	/* para página oraciones */
+	.padreOraciones {
+		flex-direction: column;
+
+		img {
+			width: 150px;
+			margin-bottom: 20px;
+			border: 2px solid $border-color_2;
+		}
+
+		.second-image {
+			display: none;
+		}
+
+		p {
+			font-size: 14px;
+			width: 300px;
+			font-weight: initial;
+		}
+	}
+
+	.rezar {
+		font-weight: initial;
+	}
+
+	/* para página actividades */
+	.bloque1 {
+		h2 {
+			font-size: 40px;
+			font-weight: bold;
+		}
+
+		h3 {
+			font-size: 35px;
+		}
+
+	}
+
+	table {
+		width: auto;
+		height: auto;
+		margin-top: 45px;
+
+		th {
+			font-size: 0.8rem;
+		}
+
+		td {
+			font-size: 0.8rem;
+		}
+	}
+
+	.video {
+		iframe {
+			width: 70vw;
+			height: auto;
+		}
+	}
+
+	/* para página contacto */
+	.hoja_contacto {
+		margin-top: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 20px;
+
+		h2 {
+			font-size: 15px;
+		}
+	}
+
+	.navbar {
+		img {
+			width: 100px;
+		}
+	}
+
+	.map-frame {
+		margin: 0px;
+		padding: 0px;
+		height: 260px;
+		border: 2px solid $border-color_3;
+
+		iframe {
+			margin: 0px;
+			width: 350px;
+			height: 257px;
+		}
+	}
+}
